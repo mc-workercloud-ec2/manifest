@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: front
-        image: 296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-frontend:fca2cf1e98ec5dcd91e41eb33d7d1d584fefc047
+        image: 296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-frontend:8f72ebf197850d606ad944bce2bc8e70a770da60
         resources:
           limits:
             memory: "1Gi"
