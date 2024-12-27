@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: jobposting
-        image: http://296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-backend:afde3b7580422d5437643c85d3de02627eef2809
+        image: http://296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-backend:4465b13f75443c43e425401ec79fc9aa8761719c
         resources:
           limits:
             memory: "1Gi"
