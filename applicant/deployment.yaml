@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: applicant
-        image: 296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-backend:b908bcbaa8efe62f6e70526f1a85a74934108136
+        image: 296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-backend:cbe564cace582ff242c94d124607f17ae4b8aad4
         resources:
           limits:
             memory: "1Gi"
