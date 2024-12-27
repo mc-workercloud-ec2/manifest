@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: applicant
+spec:
+  selector:
+    matchLabels:
+      app: applicant
+  template:
+    metadata:
+      labels:
+        app: applicant
+    spec:
+      containers:
+      - name: applicant
+        image: 296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-backend:b908bcbaa8efe62f6e70526f1a85a74934108136
+        resources:
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080

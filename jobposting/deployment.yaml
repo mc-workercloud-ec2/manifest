@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jobposting
+spec:
+  selector:
+    matchLabels:
+      app: jobposting
+  template:
+    metadata:
+      labels:
+        app: jobposting
+    spec:
+      containers:
+      - name: jobposting
+        image: http://296062552975.dkr.ecr.ap-northeast-2.amazonaws.com/ec2-team-backend:afde3b7580422d5437643c85d3de02627eef2809
+        resources:
+          limits:
+            memory: "1Gi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8888
